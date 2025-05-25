@@ -1,0 +1,138 @@
+/* Google Docs Clone Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #f1f3f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 600;
+    color: #202124;
+}
+
+/* Container Layout */
+.register-container,
+.login-container,
+.user-dashboard,
+.admin-dashboard,
+.create-doc-container,
+.editor-container,
+.messages-container,
+.share-container,
+.logs-container,
+.admin-manage-users,
+.view-all-docs {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #1a73e8;
+    color: white;
+    padding: 10px 18px;
+    font-size: 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #1669c1;
+}
+
+/* Document Editor */
+#editor {
+    min-height: 400px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Chat Styling */
+.chat-box {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 15px;
+    max-height: 300px;
+    overflow-y: scroll;
+    border-radius: 6px;
+}
+
+.chat-message {
+    margin-bottom: 12px;
+}
+
+.chat-message strong {
+    color: #333;
+}
+
+/* Navbar (override Bootstrap for docs look) */
+.navbar {
+    font-weight: 500;
+}
+
+.navbar a.nav-link {
+    color: white !important;
+    font-size: 16px;
+}
+
+.navbar a.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 14px;
+}
+
+table th {
+    background-color: #f1f3f4;
+    color: #333;
+}
+
+/* Shared user search results */
+.user-item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.user-item:hover {
+    background-color: #e8f0fe;
+}
